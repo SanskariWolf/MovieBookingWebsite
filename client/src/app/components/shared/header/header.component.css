@@ -1,0 +1,90 @@
+/* Ensure full width and height for the header */
+.header {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Prevent overflow issues */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+  background-color: #00B3C1;
+}
+
+/* Ensure the SVG spans the full width of the viewport */
+.full-width-svg {
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure no extra space around */
+  margin: 0; /* Remove default margin */
+}
+
+/* Container for overlay content to ensure it overlaps the SVG */
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1; /* Ensure it is above the SVG */
+  text-align: center;
+  box-sizing: border-box; /* Include padding in element’s total width and height */
+}
+
+/* Styling for logo container */
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-image {
+  padding-top: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 15px; /* Adjust font size */
+  font-family: 'Pacifico', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+/* Navigation styles */
+.navigation {
+  margin-left: 100px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 50px; /* Space between navigation items */
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 20px; /* Adjust font size */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #000; /* Hover color effect */
+}
+
+/* Styling for decorative image */
+.decorative-image {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  right: 90px;
+}
+
